@@ -18,4 +18,22 @@ If no query params are specified, it will always return succcess
 curl -i http://localhost:4567/crm/
 ```
 
+You can also specify a delay in seconds
+```shell
+# This will return delay the response by 4 seconds
+curl -i http://localhost:4567/crm/delay/4
+```
+
+If no query params are specified, it will delay by 3 seconds
+```shell
+# This will delay response by 3 seconds
+curl -i http://localhost:4567/crm/delay
+```
+
+You can also specify delay with a probability
+```shell
+# This will delay response by 4 seconds with 80% probability
+curl -i http://localhost:4567/crm/80/4
+```
+
 The server accepts GET and POST requests
