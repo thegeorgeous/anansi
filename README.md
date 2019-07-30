@@ -1,4 +1,4 @@
-# Anansi
+# Pascal
 
 A simple Sinatra server that will return a random http status
 
